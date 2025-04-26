@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafeteria Aroma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+      <div id="logo">
+        <img src="IMG/coffe_logo.png" alt="">
+        <h1 class="logo">Cafeteria Aroma</h1>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#menu">Cardápio</a></li>
+          <li><a href="#reviews">Avaliações</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div id="img_block">
+        <img src="IMG/coffe_main.png" alt="" />
+      </div>
+      <h2>Bem-vindo à Cafeteria Aroma</h2>
+      <p>O lugar perfeito para apreciar um café especial, relaxar e viver bons momentos.</p>
+      <a href="#menu" class="btn">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Os mais pedidos</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <h3>Capuccino Cremoso</h3>
+          <p>Clássico italiano com espuma de leite e toque de chocolate.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Latte com Baunilha</h3>
+          <p>Café suave com leite vaporizado e essência de baunilha.</p>
+        </div>
+        <div class="menu-item">
+          <h3>Brownie Artesanal</h3>
+          <p>Delicioso brownie de chocolate feito na nossa cozinha.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2>O que dizem nossos clientes</h2>
+      <div class="review-list">
+          <p><b>Mariana R.</b></p>
+          <span>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star" id="star"></i>
+          </span>
+          <p>"Melhor café da cidade! Atendimento impecável e ambiente aconchegante."</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Cafeteria Aroma. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
