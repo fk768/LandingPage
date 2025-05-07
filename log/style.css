@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#container{ 
+    position: relative;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    background-color: #6f4e37;
+    border-radius: 20px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+}
+
+input{
+    max-width: 95%;
+} 
+
+#name,#email,#passwork {
+    width: 95%;
+    padding: 10px;
+    border:0;
+    border-bottom: 3px solid #3c2b1e;
+    border-radius: 5px;
+}
+
+button{
+    width: 50%;
+    margin-top: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 25%;
+}
+button:hover{
+    background-color: #ffd8a8;
+}
+
+p{   
+    margin-top: 20px;
+    text-align: center;
+}
