@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+  header{
+    display: block;
+  }
   .logo {
     float: none;
     text-align: center;
