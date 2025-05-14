@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    #box2{
+        display: none;
+    }
+    #box1{
+        max-width: 300px;
+        border-radius: 20px;
+    }
+}
