@@ -7,7 +7,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fffaf4;
+    background-color: #fff3e0;
 }
 
 header{
@@ -68,4 +68,13 @@ ul{
 
 .nav-list a:hover{
   color: #ffd8a8;
+}
+
+#img{
+  width: 100%;
+}
+
+/**/
+.home{
+
 }
