@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Cafeteria Aroma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafeteria Aroma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <div id="logo">
-        <img src="../IMG/coffe_logo.png" alt="">
+  <header>
+      <div id="logo">
+        <img src="../IMG/coffe_logo.png" alt="Logo Cafeteria Aroma">
         <h1 class="logo">Cafeteria Aroma</h1>
       </div>
       <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
@@ -18,13 +21,121 @@
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
           <li><a href="#menu">Cardápio</a></li>
           <li><a href="#reviews">Avaliações</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
-    </header>
-    <div>
-        <img src="../IMG/coffeHome.png" alt="" id="img"
+  </header>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div id="img_block">
+        <img src="../IMG/coffe_main.png" alt="Café principal" />
+      </div>
+      <h2>Bem-vindo à Cafeteria Aroma</h2>
+      <p>O lugar perfeito para apreciar um café especial, relaxar e viver bons momentos.</p>
+      <a href="#menu" class="btn">Ver Cardápio</a>
     </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>A Cafeteria Aroma nasceu do amor pelo café artesanal e pela conexão entre pessoas. Nosso espaço foi criado para oferecer uma experiência acolhedora, com grãos selecionados e receitas que despertam os sentidos.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Nosso Cardápio</h2>
+      <div class="menu-category">
+        <h3>☕ Bebidas</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Capuccino Cremoso</h4>
+            <p>Clássico italiano com espuma de leite e toque de chocolate.</p>
+          </div>
+          <div class="menu-item">
+            <h4>Latte com Baunilha</h4>
+            <p>Café suave com leite vaporizado e essência de baunilha.</p>
+          </div>
+          <div class="menu-item">
+            <h4>Mocha Gelado</h4>
+            <p>Café, leite e calda de chocolate com gelo – refrescante!</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3>🍰 Doces</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Brownie Artesanal</h4>
+            <p>Delicioso brownie de chocolate feito na nossa cozinha.</p>
+          </div>
+          <div class="menu-item">
+            <h4>Cheesecake de Frutas Vermelhas</h4>
+            <p>Receita exclusiva com calda artesanal e base crocante.</p>
+          </div>
+          <div class="menu-item">
+            <h4>Torta de Maçã</h4>
+            <p>Clássica torta com maçãs caramelizadas e canela.</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3>🧀 Salgados</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Pão de Queijo Mineiro</h4>
+            <p>Crocante por fora, macio por dentro. Delicioso com café.</p>
+          </div>
+          <div class="menu-item">
+            <h4>Croissant de Presunto e Queijo</h4>
+            <p>Folhado francês recheado, servido quentinho.</p>
+          </div>
+          <div class="menu-item">
+            <h4>Quiche de Alho Poró</h4>
+            <p>Receita leve, saborosa e feita diariamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2>O que dizem nossos clientes</h2>
+      <div class="review-list">
+        <p><b>Mariana R.</b></p>
+        <span>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star" id="star"></i>
+        </span>
+        <p>"Melhor café da cidade! Atendimento impecável e ambiente aconchegante."</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contato</h2>
+      <p><strong>Endereço:</strong> Rua dos Aromas, 123 - Centro, São Paulo - SP</p>
+      <p><strong>Telefone:</strong> (11) 98765-4321</p>
+      <p><strong>Email:</strong> contato@cafearoma.com</p>
+      <p><strong>Horário de Funcionamento:</strong> Seg a Sáb - 08h às 20h</p>
+      <a href="" target="_blank" class="btn">Fale conosco pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Cafeteria Aroma. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>

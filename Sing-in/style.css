@@ -76,6 +76,12 @@ p{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+    color: #e2a172;
+    font-weight: bold;
+}
+
 /*second box*/
 #box2{ 
     display: flex;
@@ -92,7 +98,7 @@ img{
     border-bottom-right-radius: 20px;
 }
 
-/*page sing in*/
+/*login page*/
 #p_login{
     margin-top: 15px;
     text-align: center;
