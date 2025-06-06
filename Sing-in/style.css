@@ -49,8 +49,8 @@ label{
     margin-top: 15px;
 }
 
-#name,#email,#passwork {
-    width: 90%;
+#nome,#email,#senha {
+    width: 97%;
     padding: 5px;
     border:0;
     border-bottom: 3px solid #3c2b1e;
