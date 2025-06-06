@@ -1,18 +1,18 @@
 const express = require('express');
 const cors = require('cors');
-const db = require('./database/conn');  
+const db = require('./db');  
 const app = express();
 const PORT = 3000;
 
 app.use(cors());
 app.use(express.json());
-app.post('/register', (req, res) => {
+app.post('Sing-in/cadastro', (req, res) => {
   const { name, email, password } = req.body;
 
   if (!name || !email || !password) {
-    return res.status(400).json({ message: 'Preencha todos os campos.' });
+    return res.status(400).json({ message: 'Para obter sucesso, preencha todos os campos.' });
   }
-  const query = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
+  const query = 'insert into users (name, email, password) values (?, ?, ?)';
   
   db.query(query, [name, email, password], (err, result) => {
     if (err) {
@@ -24,10 +24,10 @@ app.post('/register', (req, res) => {
     res.status(201).json({ message: 'Usuário cadastrado com sucesso!' });
   });
 });
-app.post('/login', (req, res) => {
+app.post('Sing-in/login', (req, res) => {
   const { email, password } = req.body;
 
-  const query = 'SELECT * FROM users WHERE email = ? AND password = ?';
+  const query = 'select * from users where email = ? and password = ?';
  
   db.query(query, [email, password], (err, results) => {
     if (err) return res.status(500).json({ message: 'Erro ao buscar usuário.' });
